@@ -6,6 +6,12 @@ buildscript {
         targetSdkVersion = 34
         ndkVersion = "26.1.10909125"
         kotlinVersion = "1.9.24"
+
+        // background-geolocation
+        playServicesLocationVersion = "21.3.0"  // Or higher.
+        hmsLocationVersion = "6.9.0.300" // Huawei HMS location version
+        appCompatVersion = "1.6.1"
+        removeBackgroundGeolocationDebugSoundsInRelease = false
     }
     repositories {
         google()
@@ -15,6 +21,16 @@ buildscript {
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+    }
+}
+
+allprojects {
+    repositories {
+        // Required for react-native-background-geolocation
+        maven { url("${project(':react-native-background-geolocation').projectDir}/libs") }
+        maven { url 'https://developer.huawei.com/repo/' }
+        // Required for react-native-background-fetch
+        maven { url("${project(':react-native-background-fetch').projectDir}/libs") }
     }
 }
 
