@@ -4,6 +4,7 @@ import { NavigationContainer, useNavigationContainerRef } from '@react-navigatio
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeApp from './src/home/HomeApp';
 import HelloWorldApp from './src/helloworld/HelloWorldApp';
+import AdvancedApp from './src/advanced/AdvancedApp';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const NAVIGATION_KEY = "@transistorsoft:navigation";
@@ -77,6 +78,11 @@ const App = () => {
         <MainStack.Screen
           name="HelloWorldApp"
           component={HelloWorldApp}
+          options={screenOptions}
+        />
+        <MainStack.Screen
+          name="AdvancedApp"
+          component={AdvancedApp}
           options={screenOptions}
         />
       </MainStack.Navigator>

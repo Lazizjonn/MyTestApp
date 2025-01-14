@@ -15,7 +15,7 @@ import BackgroundGeolocation, {
   State, Location, Geofence, HttpEvent, MotionActivityEvent, ProviderChangeEvent, MotionChangeEvent, GeofenceEvent, GeofencesChangeEvent, HeartbeatEvent, ConnectivityChangeEvent
 } from "react-native-background-geolocation";
 
-import ENV from './ENV';
+import ENV from '../lib/ENV';
 
 const STORAGE_KEY: string = "@transistorsoft:";
 const TRACKER_HOST: string = 'http://tracker.transistorsoft.com/locations/';

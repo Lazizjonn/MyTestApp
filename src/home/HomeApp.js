@@ -25,7 +25,7 @@ const HomeApp = ({ navigation }) => {
         <Stack.Navigator
             initialRouteName="Home"
             screenOptions={{
-                title: 'MyTestApp Demo',
+                title: 'CityMaaSPlatform',
                 headerStyle: {
                     backgroundColor: '#fedd1e'
                 }

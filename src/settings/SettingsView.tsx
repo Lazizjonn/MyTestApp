@@ -6,7 +6,7 @@ import { Button, Icon, Input, Switch, ListItem } from 'react-native-elements'
 import DropDownPicker from 'react-native-dropdown-picker';
 import BackgroundGeolocation, { State } from "react-native-background-geolocation";
 import { COLORS } from '../lib/config';
-import SettingsService from '../lib/SettingsService';
+import SettingsService from './SettingsService';
 
 /// Local cache of plugin State.
 let pluginState: State = {

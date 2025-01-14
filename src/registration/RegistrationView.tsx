@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, } from 'react-native';
 import { Card, Button, Input } from 'react-native-elements'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import ENV from "../lib/ENV";
-import SettingsService from '../lib/SettingsService';
+import SettingsService from '../settings/SettingsService';
 import BackgroundGeolocation from "react-native-background-geolocation";
 
 const USERNAME_VALIDATOR = /^[a-zA-Z0-9_-]*$/;

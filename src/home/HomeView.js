@@ -4,7 +4,7 @@ import { Button, Icon, } from 'react-native-elements'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { COLORS } from '../lib/config';
 import ENV from '../lib/ENV';
-import SettingsService from '../lib/SettingsService';
+import SettingsService from '../settings/SettingsService';
 import BackgroundGeolocation from "react-native-background-geolocation";
 
 const HomeView = ({ route, navigation }) => {
