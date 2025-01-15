@@ -32,7 +32,7 @@ const App = () => {
         const initialUrl = await Linking.getInitialURL();
 
         if (Platform.OS !== 'web' && initialUrl == null) {
-          // Only restore state if there's no deep link and we're not on web
+          // Only restore state if there's no deep link and we're not on web, for test
           const savedStateString = await AsyncStorage.getItem(NAVIGATION_KEY);
           const state = savedStateString ? JSON.parse(savedStateString) : undefined;
 
