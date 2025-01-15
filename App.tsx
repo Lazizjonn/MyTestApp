@@ -25,6 +25,7 @@ const App = () => {
   const [initialState, setInitialState] = React.useState();
 
   console.log("---- TTTT ---- , App started")
+  console.log("---- TTTT ---- , App started in a test branch")
 
   React.useEffect(() => {
     const restoreState = async () => {
