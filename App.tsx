@@ -24,7 +24,7 @@ const App = () => {
   const [isReady, setIsReady] = React.useState(false);
   const [initialState, setInitialState] = React.useState();
 
-  console.log("---- TTTT ---- , App started, tested my master branch 2")
+  console.log("---- TTTT ---- , App started, tested my master branch 3")
 
   React.useEffect(() => {
     const restoreState = async () => {
